@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AyF-UN-8py">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="buP-2L-fPm">
+            <objects>
+                <navigationController id="AyF-UN-8py" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="SvV-xk-J9w">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.68857270079999999" green="0.0057368115630000004" blue="0.33930719770000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="gfP-Sq-Emj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BWt-is-20S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-688" y="33"/>
+        </scene>
+        <!--Generics Playground-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GenericSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="352-Zr-49K">
+                                <rect key="frame" x="16" y="16" width="382" height="742"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m9K-rU-Ybo">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="123.5"/>
+                                        <color key="backgroundColor" red="0.89564443005181349" green="0.89564443005181349" blue="0.89564443005181349" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Simple Class"/>
+                                        <connections>
+                                            <action selector="action1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eqr-y0-0sN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VGs-vh-rmA">
+                                        <rect key="frame" x="0.0" y="123.5" width="382" height="124"/>
+                                        <color key="backgroundColor" red="0.89564443010000006" green="0.89564443010000006" blue="0.89564443010000006" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Simple Method"/>
+                                        <connections>
+                                            <action selector="action1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PNc-gL-YiE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cat-63-rIy">
+                                        <rect key="frame" x="0.0" y="247.5" width="382" height="123.5"/>
+                                        <color key="backgroundColor" red="0.89564443010000006" green="0.89564443010000006" blue="0.89564443010000006" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Generic Service"/>
+                                        <connections>
+                                            <action selector="action1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0II-gX-sk2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wLt-U2-u8F">
+                                        <rect key="frame" x="0.0" y="371" width="382" height="123.5"/>
+                                        <color key="backgroundColor" red="0.89564443010000006" green="0.89564443010000006" blue="0.89564443010000006" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Generic ViewModel (VC)"/>
+                                        <connections>
+                                            <action selector="action1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X9M-RU-krs"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Djd-vl-wbR">
+                                        <rect key="frame" x="0.0" y="494.5" width="382" height="124"/>
+                                        <color key="backgroundColor" red="0.89564443010000006" green="0.89564443010000006" blue="0.89564443010000006" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Generic ViewModel (View)"/>
+                                        <connections>
+                                            <action selector="action1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2ev-r4-Tpf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Tb-Pz-Ps9">
+                                        <rect key="frame" x="0.0" y="618.5" width="382" height="123.5"/>
+                                        <color key="backgroundColor" red="0.89564443010000006" green="0.89564443010000006" blue="0.89564443010000006" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Generic Renderer"/>
+                                        <connections>
+                                            <action selector="action1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hGv-Wd-nqG"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="m9K-rU-Ybo" firstAttribute="height" secondItem="VGs-vh-rmA" secondAttribute="height" id="3ss-CS-ZJl"/>
+                                    <constraint firstItem="wLt-U2-u8F" firstAttribute="height" secondItem="Djd-vl-wbR" secondAttribute="height" id="cPn-Ui-KtS"/>
+                                    <constraint firstItem="VGs-vh-rmA" firstAttribute="height" secondItem="cat-63-rIy" secondAttribute="height" id="egW-qF-uVL"/>
+                                    <constraint firstItem="Djd-vl-wbR" firstAttribute="height" secondItem="6Tb-Pz-Ps9" secondAttribute="height" id="gyx-yJ-GHB"/>
+                                    <constraint firstItem="cat-63-rIy" firstAttribute="height" secondItem="wLt-U2-u8F" secondAttribute="height" id="u6F-bB-8Ba"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="352-Zr-49K" secondAttribute="trailing" constant="16" id="XeT-8U-nJH"/>
+                            <constraint firstItem="352-Zr-49K" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ZGI-dF-pcb"/>
+                            <constraint firstItem="352-Zr-49K" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="eBb-Dj-leK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="352-Zr-49K" secondAttribute="bottom" constant="16" id="hnB-Rb-LzY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Generics Playground" id="QZf-SG-1uw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
